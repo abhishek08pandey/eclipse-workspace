@@ -1,0 +1,42 @@
+package task;
+
+import java.util.Scanner;
+
+public class CalculatorMethod {
+
+	public void calculate() {
+
+		Scanner sc = new Scanner(System.in);
+		System.out.println("enter 1st value: ");
+		int value1 = sc.nextInt();
+		System.out.println("enter operator:  ");
+		String operator = sc.next();
+		System.out.println("enter 2nd value: ");
+		int value2 = sc.nextInt();
+		
+		if(operator.equals("+")) {
+			System.out.println(value1 + value2);
+		}
+		else if(operator.equals("-")) {
+			System.out.println(value1 - value2);
+		}
+		else if(operator.equals("*")) {
+			System.out.println(value1*value2);
+		}
+		else if(operator.equals("/")) {
+			System.out.println(value1/value2);
+		}
+		else if(operator.equals("%")) {
+			System.out.println(value1%value2);
+		}
+		else {
+			System.out.println("wrong input");
+		}
+	}
+	
+	public static void main(String[] args) {
+		
+		CalculatorMethod cl = new CalculatorMethod();
+		cl.calculate();
+	}
+}

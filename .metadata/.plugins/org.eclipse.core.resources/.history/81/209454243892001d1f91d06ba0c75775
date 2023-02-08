@@ -1,0 +1,12 @@
+package task;
+
+public class SString {
+
+	public static void main(String[] args) {
+		String s1 = "abhishek"; //bt String literal
+		String s2 = new String("pandey"); //by new keyword
+		
+		System.out.println(s1);
+		System.out.println(s2);
+	}
+}

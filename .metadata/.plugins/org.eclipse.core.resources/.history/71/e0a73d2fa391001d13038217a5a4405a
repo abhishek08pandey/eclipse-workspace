@@ -1,0 +1,27 @@
+package task;
+
+
+public class Calculator extends CalculatorMethod {
+	static int i;
+	public static void main(String[] args) {
+		
+		Calculator al = new Calculator();
+		//al.calculate();
+		
+		
+		try {
+			try {
+				i = System.in.read();
+			} catch (Exception e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+		} catch (Exception e) {
+			e.printStackTrace();
+		}//returns ASCII code of 1st character  
+		System.out.println((Stirng)i);
+	
+	//	new Calculator().calculate();
+		
+	}
+}

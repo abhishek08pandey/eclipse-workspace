@@ -1,0 +1,30 @@
+package practice;
+
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.FileOutputStream;
+import java.io.IOException;
+
+public class A{
+
+	public static void main(String[] args) throws IOException {
+		
+		File file= new File("sample.txt");
+		
+		System.out.println(file.createNewFile());
+		
+		//FileOutputStream is use to write a text in the file
+		FileOutputStream fos = new FileOutputStream(file);
+		String str = "insert data";
+		fos.write(str.getBytes());
+		
+		fos.close();
+		
+		//FileInputStream is use for reading text from file
+		FileInputStream fis = new FileInputStream(file);
+		
+		System.out.println(fis.read());
+		
+	}
+	
+}    

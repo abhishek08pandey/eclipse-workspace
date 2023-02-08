@@ -1,0 +1,8 @@
+package calculator;
+
+public class Function {
+	private void sum() {
+		// TODO Auto-generated method stub
+		
+	}
+}

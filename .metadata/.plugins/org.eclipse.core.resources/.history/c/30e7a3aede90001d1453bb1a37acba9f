@@ -1,0 +1,21 @@
+package task;
+
+public class Array{
+	
+	public static void main(String[] args) {
+		
+		Array ar = new Array();
+		
+
+		int []x = {1,7,2,5,-9,-11};
+		int sum = 8;
+		ar.arraySum(x , sum);
+		
+		
+	}
+
+	private void arraySum(int[] x, int sum) {
+		// TODO Auto-generated method stub
+		
+	}
+}

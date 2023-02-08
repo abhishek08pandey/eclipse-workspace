@@ -1,0 +1,85 @@
+package com.bankapp.controller;
+
+import java.util.Scanner;
+import com.bankapp.user.User;
+
+public class Controller {
+	static User user = new User();
+
+	public static void main(String[] args) {
+		modeCall();
+	}
+
+	public static void modeCall() {
+		Scanner scn = new Scanner(System.in);
+		System.out.println("*******************************************");
+		System.out.println("Mode:\n Create Account 1\n Balance inquiry 2 \n Account Details 3\n ");
+		String str = scn.next();
+		if (str.contains("1")) {
+			createAccount();
+		} else if (str.contains("2")) {
+			balanceInquiry();
+		} else if (str.contains("3")) {
+			accountDetails();
+		} else {
+			System.out.println("Choose Mode: ");
+			modeCall();
+		}
+	}
+
+	public static void createAccount() {
+		try {
+		Scanner scn = new Scanner(System.in);
+		System.out.println("*******************************************");
+		System.out.println("Enter Name: ");
+		user.name = scn.next();
+		System.out.println("Enter Account type: ");
+		user.account = scn.next();
+		System.out.println("Enter Account Number: ");
+		user.accountNumber = scn.nextLong();
+		System.out.println("Balance: ");
+		user.balance = scn.nextLong();
+
+		System.out.println("*******************************************");
+		System.out.println("AccountDetails: \n" + "Name: " + user.name + "\n" + "Account number: " + user.accountNumber
+				+ "\n" + "Account type: " + user.account + "\n" + "Balance: " + user.balance);
+		System.out.println("\nThanks for Using Bank application");
+		
+		modeCall();
+		}catch(Exception e){
+			System.out.println("Enter valid input");modeCall();
+		}
+	}
+
+	public static void balanceInquiry() {
+		Scanner scn = new Scanner(System.in);
+		System.out.println("For Balance Inquiry Enter name: ");
+		String s = scn.next();
+		try {
+			if (user.name.contentEquals(s)) {
+				System.out.println("Balance: " + user.balance);
+				modeCall();
+			} else {
+				System.out.println("User does not exist \n For try again press: 4 \n Exit press: 5");
+				String exit = scn.next();
+
+				if (exit.contains("4")) {
+					balanceInquiry();
+				} else if (exit.contains("5")) {
+					System.out.println("Thanks for Using Bank application");
+				}
+			}
+		} catch (NullPointerException e) {
+			System.out.println("User does not exist");
+			modeCall();
+		}
+	}
+
+	public static void accountDetails() {
+		System.out.println("*******************************************");
+		System.out.println("AccountDetails: \n" + "Name: " + user.name + "\n" + "Account number: " + user.accountNumber
+				+ "\n" + "Account type: " + user.account + "\n" + "Balance: " + user.balance);
+		System.out.println("\nThanks for Using Bank application");
+	}
+
+}

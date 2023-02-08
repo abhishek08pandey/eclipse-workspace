@@ -1,0 +1,25 @@
+package task;
+
+
+public class Calculator extends CalculatorMethod {
+	
+	public static void main(String[] args) {
+		
+		Calculator al = new Calculator();
+		//al.calculate();
+	
+	//	new Calculator().calculate();
+		switch (2) {
+		case 1:
+			System.out.println("abhishek");
+			break;
+			
+		case 2:
+			System.out.println("oandey");
+			break;
+
+		default:System.out.println("no");
+			break;
+		}
+	}
+}

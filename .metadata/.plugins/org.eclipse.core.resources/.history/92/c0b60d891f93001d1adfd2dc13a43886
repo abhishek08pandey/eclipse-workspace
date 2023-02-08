@@ -1,0 +1,15 @@
+package singletonDesignPattern;
+
+public class SingleObject {
+
+	private SingleObject singleObject;
+	
+	private SingleObjet(){
+	}
+	public static SingleObject getInstance() {
+		
+		
+		return singleObject;
+		
+	}
+}

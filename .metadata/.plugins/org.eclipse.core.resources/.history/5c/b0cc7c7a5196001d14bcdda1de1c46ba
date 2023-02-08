@@ -1,0 +1,17 @@
+package com.OneRivet.thread;
+
+public class ThreadPriority extends Thread {
+
+	public static void main(String[] args) {
+
+		System.out.println("current:  "+ Thread.currentThread().getPriority());
+		Thread.currentThread().setPriority(1);
+		//ThreadPriority thread = new ThreadPriority();
+		System.out.println("current:  "+ Thread.currentThread().getPriority());
+		
+		Thread.currentThread().setPriority(9);
+		//ThreadPriority thread1 = new ThreadPriority();
+		System.out.println(Thread.currentThread().getPriority());
+	}
+
+}

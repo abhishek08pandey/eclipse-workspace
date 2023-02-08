@@ -1,0 +1,22 @@
+package factoryDesignPattern;
+
+public class ShapeType {
+
+	public Shape getShape(String shaprType) {
+		
+		if(shaprType==null) {
+			return null;
+		}
+		if(shaprType.equalsIgnoreCase("circle")) {
+			return new Circle();
+		}
+		if(shaprType.equalsIgnoreCase("circle")) {
+			return new Circle();
+		}
+		if(shaprType.equalsIgnoreCase("circle")) {
+			return new Circle();
+		}
+		
+		return null;
+	}
+}

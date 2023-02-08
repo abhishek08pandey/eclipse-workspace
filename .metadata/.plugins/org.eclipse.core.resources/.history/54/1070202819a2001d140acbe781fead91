@@ -1,0 +1,16 @@
+package com.OneRivet.Programme;
+
+public class Palindrome {
+
+	public static void main(String[] args) {
+		
+		String s = "abhishek";
+		String reverce;
+		
+		for (int i = s.length(); i >=0; i--) {
+			reverce=reverce+s.charAt(i);
+		}
+
+	}
+
+}

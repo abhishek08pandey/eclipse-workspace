@@ -1,0 +1,12 @@
+package calculator;
+
+import java.util.Scanner;
+
+public class Function {
+	
+	public void sum() {
+		
+		Scanner scan = new Scanner(System.in);
+		
+	}
+}

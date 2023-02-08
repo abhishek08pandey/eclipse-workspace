@@ -1,0 +1,24 @@
+package practice;
+
+
+public class A{    
+	
+	int rex(int number, int reverce) {
+		int reminder;
+		while (number!=0) {
+			reminder=number%10;
+			reverce= reverce * 10 + reminder;
+			number= number/10;
+			
+		}return reverce;
+	}
+public static void main(String[] args) {  
+	int number= 9876, reverce =0;
+	
+  A a = new A();
+  int rex = a.rex(number, reverce);
+  System.out.println(rex);
+  
+  System.out.println(9876%2);
+}    
+}    

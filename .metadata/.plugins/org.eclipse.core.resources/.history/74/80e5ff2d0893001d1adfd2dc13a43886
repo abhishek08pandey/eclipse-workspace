@@ -1,0 +1,14 @@
+package practice;
+
+import java.io.File;
+import java.io.FileOutputStream;
+
+public class A{
+
+	public static void main(String[] args) {
+		
+		File file= new File("samole.txt");
+		FileOutputStream f = new FileOutputtStream(file);
+	}
+	
+}    

@@ -1,0 +1,30 @@
+package task;
+
+import java.util.Scanner;
+
+public class Calculator {
+
+	public static void main(String[] args) {
+		
+		Scanner sc = new Scanner(System.in);
+		System.out.println("enter 1st value");
+		int value1 = sc.nextInt();
+		String operator = sc.next();
+		int value2 = sc.nextInt();
+		
+		if(operator.equals("+")) {
+			System.out.println(value1 + value2);
+		}
+		else if(operator.equals("-")) {
+			System.out.println(value1 - value2);
+		}
+		else if(operator.equals("*")) {
+			System.out.println(value1*value2);
+		}
+		else if(operator.equals("/")) {
+			System.out.println(value1/value2);
+		}else if(operator.equals("%")) {
+			System.out.println(value1%value2);
+		}
+	}
+}

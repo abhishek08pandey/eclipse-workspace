@@ -1,0 +1,17 @@
+package inheritance;
+
+public class Implements implements Service {
+
+	@Override
+	public void simpleAccount() {
+		// TODO Auto-generated method stub
+
+	}
+
+	@Override
+	public Object account() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

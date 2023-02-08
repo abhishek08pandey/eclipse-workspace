@@ -1,0 +1,26 @@
+package inheritance;
+
+
+
+public class ServiceImpl implements Service {
+
+	@Override
+	public void simpleAccount() {
+		System.out.println("platanium Account");
+	}
+
+	
+	public static void main(String[] args) {
+		ServiceImpl service = new ServiceImpl();
+		service.simpleAccount();
+		service.account();
+		
+	}
+
+
+	@Override
+	public String account() { //Object to String, Integer, ALl Wrapper classes return type
+		System.out.println("java 1.5 version");
+		return null;
+	}
+}

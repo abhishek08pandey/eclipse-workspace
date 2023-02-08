@@ -1,0 +1,41 @@
+package com.OneRivet.ConCurrentHashMap;
+
+import java.util.Enumeration;
+import java.util.Iterator;
+import java.util.concurrent.ConcurrentHashMap;
+
+public class ConCurrentHashMap {
+
+	public static void main(String[] args) {
+		
+		ConcurrentHashMap<Integer, String> conMap = new ConcurrentHashMap<>();
+		conMap.put(101, "abhi");
+		conMap.put(100, "Husain");
+		conMap.put(99, "Jay");
+		
+		System.out.println(conMap);
+		System.out.println(conMap.contains("Husain"));//check values print true
+		System.out.println(conMap.containsKey(100));
+		System.out.println(conMap.containsValue("Husain"));
+
+		conMap.compute(101, (key, val)->val+"shek");//it will compute/change with input
+		System.out.println(conMap);
+		
+		conMap.computeIfAbsent(102, k->"Dharshi");//it key not present than it add key+value
+		System.out.println(conMap);
+		
+		conMap.computeIfAbsent(101, k->"hi");//first it will check key present than it can't change
+		System.out.println(conMap);
+		
+		conMap.computeIfPresent(99, (key, val)->"jay patel");
+		System.out.println(conMap);
+		
+		Enumeration<String> elements = conMap.elements();
+		while (elements.hasMoreElements()) {
+			System.out.println(elements.nextElement());
+		}
+		
+		System.out.println(conMap.get(101));//key through get value
+	}
+
+}

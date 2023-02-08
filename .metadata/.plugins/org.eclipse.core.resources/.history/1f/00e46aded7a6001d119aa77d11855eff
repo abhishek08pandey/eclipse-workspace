@@ -1,0 +1,17 @@
+package com.OneRivet.ConCurrentHashMap;
+import java.util.concurrent.CopyOnWriteArraySet;
+
+public class CopyOnWriteArraySet1 {
+
+	public static void main(String[] args) {
+
+		CopyOnWriteArraySet<Integer> arrSet = new CopyOnWriteArraySet<Integer>();
+		arrSet.add(12);
+		arrSet.add(5);
+		arrSet.add(45);
+		arrSet.add(116);
+		
+		System.out.println(arrSet);
+	}
+	
+}

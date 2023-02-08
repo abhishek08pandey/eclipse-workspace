@@ -1,0 +1,11 @@
+package factoryDesignPattern;
+
+public class MainFactory {
+
+	public static void main(String[] args) {
+		ShapeType shapeType = new ShapeType();
+		
+		Shape shape1 = shapeType.getShape("circle");
+		shape1.draw();
+	}
+}

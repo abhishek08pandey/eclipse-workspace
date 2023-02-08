@@ -1,0 +1,21 @@
+package com.OneRivet.thread;
+
+public class RunnableInterface implements Runnable{
+
+	public static void main(String[] args) {
+		
+		RunnableInterface run = new RunnableInterface();
+		Thread thread = new Thread("runnabale thread apply");
+		thread.start();
+		String name = thread.getName();
+		System.out.println(name);
+
+	}
+
+	@Override
+	public void run() {
+		System.out.println("runnable");
+		
+	}
+
+}

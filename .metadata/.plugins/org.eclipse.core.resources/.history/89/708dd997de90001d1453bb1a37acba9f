@@ -1,0 +1,22 @@
+package task;
+
+public class Array{
+	
+	public static void main(String[] args) {
+		
+		Array ar = new Array();
+		
+
+		int []x = {1,7,2,5,-9,-11};
+		int sum = 8;
+		ar.arraySum(x , sum);
+		
+		for (int i = 0; i < x.length-1; i++) {
+			for (int j =i+1; j < x.length; j++) {
+				if(x[i]+x[j]==sum) {
+					System.out.println("i:  " + x[i] + ",  j:  " + x[j]);
+				}
+			}
+		}
+	}
+}

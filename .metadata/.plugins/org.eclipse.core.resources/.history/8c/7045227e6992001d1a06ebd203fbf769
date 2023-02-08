@@ -1,0 +1,72 @@
+package task;
+
+public class SString {
+
+	public static void main(String[] args) {
+		SString str = new SString();
+		String s1 = "abcd"; //bt String literal
+		String s2 = new String("acd"); //by new keyword
+		char ch[]={'s','t','r','i','n','g','s'};    
+		
+		String s3 = new String(ch);
+		System.out.println(s1.equals(s2));//when value is same in string constant pool
+		System.out.println(s1.charAt(1));
+		System.out.println(s1.codePointAt(1));
+		System.out.println(s1.codePointBefore(1));
+		System.out.println(s1.compareToIgnoreCase(s2));
+		System.out.println(s1.concat(s3));
+		System.out.println(s1.contains(s2));
+		System.out.println(s1.length());
+		System.out.println(s1.substring(2));//subString
+		System.out.println(s1.subSequence(1, 3));
+		
+		for (int i = 0; i < s3.length(); i++) { //Reverse string 
+			System.out.print(s3.charAt(s3.length()-i-1));
+		}
+		System.out.print("\n");// Space
+		
+		for (int i = s3.length()-1; i>= 0; i--) {
+			System.out.print(s3.charAt(i));
+		}System.out.print("\n");// Space
+		
+		String name = "abhishekk pandeyk fromk valsad";
+		String f1 = String.format("name is %s",name);
+		System.out.println(f1);
+		
+		System.out.println(String.join("/", "08", "08","08"));//string join
+		
+		
+		String stdddr = ""; // empty string  
+		String str1 = null; 
+		System.out.println(stdddr);
+		System.out.println(str1);
+		
+		System.out.println(name.replace('k', 's'));
+		System.out.println(name.replace("abhishek", "shek"));
+		System.out.println(name.replaceAll("abhishek", "abhi"));
+		System.out.println(s1.equalsIgnoreCase(s2));
+		
+		//String[] split = name.split("\\s");
+		String[] split1 = name.split("k", 0);
+		//System.out.println(split);
+		for (String string : split1) {
+			System.out.println(string);
+		}
+		
+		String st = new String("Welcome to JavaTpoint").intern(); // statement - 1  
+		String st1 = new String("Welcome to JavaTpoint").intern(); // statement - 2  
+		System.out.println(st1 == st); // prints true  
+		
+		/*
+		 here when we use intern() method that time that variable/rarance variable is in "STRING CONSTANT POOL" 
+	In the above code snippet, the intern() method is invoked on the String objects. Therefore, the memory is
+	 allocated in the SCP. For the second statement, no new string object is created as the content of st and
+    st1 are the same. Therefore, the reference of the object created in the first statement is returned for st1.
+    Thus, st and st1 both point to the same memory. Hence, the print statement prints true.
+		 */
+		String name1 = "find index number";
+		System.out.println(name1.indexOf('i', 10));
+	
+		
+	}
+}

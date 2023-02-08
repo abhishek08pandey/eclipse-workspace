@@ -1,0 +1,31 @@
+package inheritance;
+
+import abraction.Student;
+
+public class ServiceImpl extends Student implements Service {
+
+	ServiceImpl() {
+		// TODO Auto-generated constructor stub
+	}
+
+
+	@Override
+	public void simpleAccount() {
+		System.out.println("platanium Account");
+	}
+
+	
+	public static void main(String[] args) {
+		ServiceImpl service = new ServiceImpl();
+		service.simpleAccount();
+		
+		Student student = new ServiceImpl();
+	}
+
+
+	@Override
+	public void test() {
+		// TODO Auto-generated method stub
+		
+	}
+}

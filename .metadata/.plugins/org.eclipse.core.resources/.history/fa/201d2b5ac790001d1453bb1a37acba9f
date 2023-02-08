@@ -1,0 +1,19 @@
+package task;
+
+
+public class Array {
+
+	public static void main(String[] args) {
+		
+		int[]x = {6, 2 ,6};
+		int []j = new int [x.length];
+		int y =0;
+		
+		for (int i = 0; i < x.length-1; i++) {
+			for (int k = 0; k < x.length-1; k++) {
+				System.out.println(y = x[i]+x[i+1];);
+			}
+			
+		}
+	}
+}

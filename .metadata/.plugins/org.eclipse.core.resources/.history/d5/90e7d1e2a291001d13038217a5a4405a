@@ -1,0 +1,23 @@
+package task;
+
+import java.io.IOException;
+
+public class Calculator extends CalculatorMethod {
+
+	public static void main(String[] args) {
+		
+		Calculator al = new Calculator();
+		//al.calculate();
+		
+		int i;
+		try {
+			i = System.in.read();
+		} catch (IOException e) {
+			e.printStackTrace();
+		}//returns ASCII code of 1st character  
+		System.out.println((char)i);
+	
+	//	new Calculator().calculate();
+		
+	}
+}

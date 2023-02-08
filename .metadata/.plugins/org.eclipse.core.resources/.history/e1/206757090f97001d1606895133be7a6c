@@ -1,0 +1,11 @@
+package javaRuntimeClass;
+
+public class A {
+
+	public static void main(String[] args) {
+		
+		 Runtime.getRuntime().exec("notepad");//will open a new notepad  
+
+	}
+
+}

@@ -1,0 +1,10 @@
+package com.OneRivet.thread;
+
+public class ThreadClass extends Thread {
+
+	public static void main(String[] args) {
+		
+		ThreadClass threadClass = new ThreadClass();
+		threadClass.start();
+	}
+}

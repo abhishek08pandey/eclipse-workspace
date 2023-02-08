@@ -1,0 +1,27 @@
+package task;
+
+public class SString {
+
+	public static void main(String[] args) {
+		String s1 = "abcd"; //bt String literal
+		String s2 = new String("ab"); //by new keyword
+		char ch[]={'s','t','r','i','n','g','s'};    
+		
+		String s3 = new String(ch);
+		
+		System.out.println(s1.charAt(1));
+		System.out.println(s1.codePointAt(1));
+		System.out.println(s1.codePointBefore(1));
+		System.out.println(s1.compareToIgnoreCase(s2));
+		System.out.println(s1.concat(s3));
+		System.out.println(s1.contains(s2));
+		System.out.println(s1.length());
+		
+		for (int i = 0; i < s3.length(); i++) { //Reverse string 
+			System.out.print(s3.charAt(s3.length()-i-1)+"/n");
+		}
+		for (int i = s3.length()-1; i>= 0; i--) {
+			System.out.println(s3.charAt(i));
+		}
+	}
+}

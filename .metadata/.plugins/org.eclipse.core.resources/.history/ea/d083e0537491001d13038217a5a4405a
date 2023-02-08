@@ -1,0 +1,14 @@
+package task;
+
+public class Object {
+
+	public static void main(String[] args) {
+		
+		new Object().test();
+	}
+
+	public void test() {
+		// TODO Auto-generated method stub
+		
+	}
+}

@@ -1,0 +1,12 @@
+package factoryDesignPattern;
+
+public class ShapeType {
+
+	public Shape getShape(String shaprType) {
+		
+		if(shaprType==null) {
+			return null;
+		}
+		return null;
+	}
+}

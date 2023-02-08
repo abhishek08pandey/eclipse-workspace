@@ -1,0 +1,10 @@
+package task;
+
+
+public class Calculator extends CalculatorMethod {
+
+	public static void main(String[] args) {
+		
+		
+	}
+}

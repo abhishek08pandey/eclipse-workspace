@@ -1,0 +1,14 @@
+package com.OneRivet.thread;
+
+public class ThreadPriority {
+
+	public static void main(String[] args) {
+
+		Thread.currentThread();
+		ThreadPriority thread = new ThreadPriority();
+		
+		thread.cur
+
+	}
+
+}

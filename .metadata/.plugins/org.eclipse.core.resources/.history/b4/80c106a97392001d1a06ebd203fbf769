@@ -1,0 +1,16 @@
+package calculator;
+
+public class Main extends Function{
+
+	public static void main(String[] args) {
+		Main main = new Main();
+		//main.sum();
+		main.test();
+	}
+	
+public void test() {
+	int us ;
+	
+	System.out.println(us);
+}
+}

@@ -1,0 +1,18 @@
+package com.OneRivet.collections;
+import java.util.*;
+public class Method1 {
+
+	public static void main(String[] args) {
+		
+		List <String> list = new ArrayList<String>();
+		list.add("abhishek");
+		list.add("Hushain");
+		System.out.println("Only list Use: "+list);
+		
+		Collections.addAll(list, "Price", "Jay", "Dev");
+		System.out.println("Afetr Collections addAll() method use: "+list);
+		
+		System.out.println(Collections.min(list));
+	}
+
+}

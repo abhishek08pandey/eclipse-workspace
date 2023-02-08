@@ -1,0 +1,14 @@
+package calculator;
+
+import java.util.Scanner;
+
+public class Function {
+	
+	public void sum() {
+		
+		Scanner scan = new Scanner(System.in);
+		
+		System.out.println("Enter your first value:  ");
+		int num1 = scan.nextInt();
+	}
+}
